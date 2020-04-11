@@ -5,7 +5,10 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
 	
 	protected Vector<E> data; 
 
-
+	public VectorHeap(){
+		data = new Vector<E>();
+	}
+	
 	public VectorHeap(Vector<E> v)
 	// post: constructs a new priority queue from an unordered vector
 	{
